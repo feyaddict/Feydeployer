@@ -1,0 +1,51 @@
+{
+  "name": "@feyprotocol/sdk",
+  "version": "0.1.1",
+  "description": "TypeScript SDK for building on the Fey protocol",
+  "keywords": [
+    "fey",
+    "sdk",
+    "defi",
+    "viem",
+    "typescript"
+  ],
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "tsc --noEmit",
+    "test": "node --loader ts-node/esm --experimental-specifier-resolution=node --test src/__tests__/dexscreener.test.ts"
+  },
+  "dependencies": {
+    "@feyprotocol/sdk": "latest",
+    "@vercel/analytics": "latest",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.454.0",
+    "next": "16.0.7",
+    "react": "19.2.1",
+    "react-dom": "19.2.1",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7",
+    "tw-animate-css": "latest",
+    "viem": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "postcss": "^8.5",
+    "tailwindcss": "4.1.17",
+    "ts-node": "^10.9.2",
+    "typescript": "^5"
+  },
+  "peerDependencies": {
+    "viem": "2.9.0"
+  }
+}
